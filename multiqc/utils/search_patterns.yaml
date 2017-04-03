@@ -5,6 +5,23 @@
 bamtools:
     stats:
       contents: 'Stats for BAM file(s):'
+bbmap:
+    bhist:
+        fn: '*.bhist*'
+    qhist:
+        fn: '*.qhist*'
+    qchist:
+        fn: '*.qchist*'
+    aqhist:
+        fn: '*.aqhist*'
+    bqhist:
+        fn: '*.bqhist*'
+    lhist:
+        fn: '*.lhist*'
+    gchist:
+        fn: '*.gchist*'
+    statsfile:
+        fn: '*.statsfile*'
 bcftools:
     stats:
         contents: 'This file was produced by bcftools stats'

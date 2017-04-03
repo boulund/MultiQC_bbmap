@@ -1,5 +1,13 @@
 # MultiQC Version History
 
+## dev
+
+#### Module updates:
+* [**BBMap**](http://jgi.doe.gov/data-and-tools/bbtools/bb-tools-user-guide/) -
+  new module!
+  * New module for the `BBMap` suite of tools, used for DNA/RNA sequencing
+	pre-processing, assembly, alignment, and post-processing.
+
 ## v1.0dev
 Version 1.0! Bumping the major version number for a couple of reasons:
 

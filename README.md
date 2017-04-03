@@ -30,16 +30,16 @@ Currently, supported tools include:
 
 Read QC & pre-processing     | Aligners / quantifiers | Post-alignment processing | Post-alignment QC
 -----------------------------|------------------------|---------------------------|-------------------
-[Cluster Flow][clusterflow]  | [Bismark][bismark]     | [Bamtools][bamtools]      | [methylQA][methylqa]
-[Cutadapt][cutadapt]         | [Bowtie][bowtie-1]     | [Bcftools][bcftools]      | [Peddy][peddy]
-[FastQC][fastqc]             | [Bowtie 2][bowtie-2]   | [GATK][gatk]              | [Preseq][preseq]
-[FastQ Screen][fastq-screen] | [HiCUP][hicup]         | [HTSeq][htseq]            | [Qualimap][qualimap]
-[Skewer][skewer]             | [Kallisto][kallisto]   | [Picard][picard]          | [QUAST][quast]
-[Trimmomatic][trimmomatic]   | [Salmon][salmon]       | [Prokka][prokka]          | [RNA-SeQC][rna_seqc]
-                             | [Slamdunk][slamdunk]   | [Samblaster][samblaster]  | [RSeQC][rseqc]
-                             | [STAR][star]           | [Samtools][samtools]      | [BUSCO][busco]
-                             | [Tophat][tophat]       | [SnpEff][snpeff]          | [goleft][goleft]
-                             |                        | [Subread featureCounts][featurecounts] |
+[Cluster Flow][clusterflow]  | [BBMap][bbmap]         | [Bamtools][bamtools]      | [methylQA][methylqa]
+[Cutadapt][cutadapt]         | [Bismark][bismark]     | [Bcftools][bcftools]      | [Peddy][peddy]
+[FastQC][fastqc]             | [Bowtie][bowtie-1]     | [GATK][gatk]              | [Preseq][preseq]
+[FastQ Screen][fastq-screen] | [Bowtie_2][bowtie-2]   | [HTSeq][htseq]            | [Qualimap][qualimap]
+[Skewer][skewer]             | [HiCUP][hicup]         | [Picard][picard]          | [QUAST][quast]
+[Trimmomatic][trimmomatic]   | [Kallisto][kallisto]   | [Prokka][prokka]          | [RNA-SeQC][rna_seqc]
+-                            | [Salmon][salmon]       | [Samblaster][samblaster]  | [RSeQC][rseqc]
+-                            | [Slamdunk][slamdunk]   | [Samtools][samtools]      | [BUSCO][busco]
+-                            | [STAR][star]           | [SnpEff][snpeff]          | [goleft][goleft]
+-                            | [Tophat][tophat]       | [Subread featureCounts][featurecounts] |
 
 MultiQC can also easily parse data from custom scripts, if correctly formatted / configured.
 See the [MultiQC documentation](http://multiqc.info/docs/#custom-content) for more information.
@@ -144,6 +144,7 @@ Code contributions from:
 [@avilella](https://github.com/avilella),
 [@vladsaveliev](https://github.com/vladsaveliev)
 [@t-neumann](https://github.com/t-neumann)
+[@boulund](https://github.com/boulund)
 and many others. Thanks for your support!
 
 [bamtools]:       http://multiqc.info/docs/#bamtools

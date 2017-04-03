@@ -169,6 +169,7 @@ module_order:
     - 'samtools'
     - 'bamtools'
     # Alignment tool stats
+    - 'bbmap'
     - 'bismark'
     - 'hicup'
     - 'salmon'
