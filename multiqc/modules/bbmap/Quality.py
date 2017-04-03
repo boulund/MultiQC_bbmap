@@ -27,11 +27,12 @@ def parse(self):
         sample_name = f['fn'].split(".qhist")[0]
 
         firstline = f['f'].readline()
-        headers = "#BaseNum\tRead1_linear\tRead1_log\tRead1_measured\tRead2_linear\tRead2_log\tRead2_measured".split()
+        headers = "#BaseNum\tRead1_linear\tRead1_log".split()
         if not firstline.startswith('\t'.join(headers)):
             # Skip to the next file, this appears to be something else
             log.debug("Parse error for: %s, first line does not match qhist format.", f['fn'])
             continue
+        actual_headers = firstline.strip()[1:].split()
         for line in f['f']:
             try:
                 splitline = line.split()
@@ -41,7 +42,7 @@ def parse(self):
                 log.warning("Parsing error for %s, the offending line was: %s", f['fn'], line)
                 break
 
-            for idx, column in enumerate(headers[1:]):
+            for idx, column in enumerate(actual_headers[1:]):
                 self.bbmap_Quality_data[sample_name][column][basenum] = data_values[idx]
         else:
             self.add_data_source(f)
